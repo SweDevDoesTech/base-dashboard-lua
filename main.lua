@@ -1,6 +1,6 @@
 require("config")
 
-local ws,err = http.websocket(Config.wsUrl)
+local ws,err = http.websocket(config.wsUrl)
 
 if ws then
     ws.send("Hello from Minecraft!")
